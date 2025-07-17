@@ -9,7 +9,18 @@
 // `factorial(2)` to return `2`, and so on.
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
-
+fn factorial(mut n: u32) -> u32 {
+    if n < 2 {
+        1
+    } else {
+        let mut f: u32 = 1;
+        while n > 1 {
+            f *= n;
+            n -= 1;
+        }
+        f
+    }
+}
 #[cfg(test)]
 mod tests {
     use crate::factorial;
