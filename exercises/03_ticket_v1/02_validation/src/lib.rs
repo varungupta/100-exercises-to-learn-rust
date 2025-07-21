@@ -1,5 +1,3 @@
-use std::os::macos::raw::stat;
-
 struct Ticket {
     title: String,
     description: String,
